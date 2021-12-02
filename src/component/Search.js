@@ -10,11 +10,10 @@ function Search({ filterFoodList }) {
     }
 
     return (
-        <div className="form">
+        <div className="search-bar">
             <Divider>Search</Divider>
-            
             <label>Search</label>
-            <Input value={foodName} type="text" onChange={handleSearch} />
+            <Input className="search-input" value={foodName} type="text" onChange={handleSearch} />
         </div>
     );
 }

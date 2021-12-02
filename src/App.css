@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -38,6 +42,13 @@
 }
 
 .form {
-  width: 60%;
-  
+  width: 50%;
 }
+.search-bar {
+  width: 50%;
+}
+.search-input{
+  border: 1px solid black;
+}
+
+
