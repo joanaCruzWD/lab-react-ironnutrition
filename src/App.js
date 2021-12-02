@@ -9,7 +9,7 @@ import { Row, Divider, Button } from "antd";
 
 
 function App() {
-  const [allFoods, setAllFoods] = useState(foodsJSON);
+  const [allFoods, setAllFoods] = useState(foodsJSON); 
   const [foods, setFoods] = useState(foodsJSON);
   const [isFormVisible, setIsFormVisible] = useState(false);
 
@@ -50,7 +50,7 @@ function App() {
       <Row style={{ width: "100%", justifyContent: "center" }}>
         {foods.length !== 0 ? foods.map((foodItem) => {
           return (
-            <div>
+            <div key= {foodItem.name}>
               <FoodBox foodItem={foodItem} deleteFood={deleteFood} />
             </div>
           )
